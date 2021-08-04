@@ -1,0 +1,294 @@
+/* Header */
+
+/* TOP BAR */
+.top-bar{
+    height: var(--navbar-height);
+
+    background-color: #000;
+}
+
+.top-bar__social-list{
+    display: flex;
+}
+
+.top-bar__social-list > li > a{
+    display: block;
+    padding: 0px 16px;
+
+    color: var(--white-color);
+
+    font-size: 1.5rem;
+    line-height: var(--navbar-height);
+}
+
+.top-bar__social-list > li:hover > a{
+    background: #ccc;
+    color: var(--black-color);
+}
+
+/* TOP TITLE */
+
+.top-title{
+    padding: 48px 16px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.top-title__heading{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.top-title__sub-heading{
+    font-size: 1.6rem;
+}
+
+.top-title__sub-heading span{
+    display: inline-block;
+    padding: 0px 8px;
+
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+/* MAIN */
+
+/* TITLE HERO */
+
+.hero{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: center / contain no-repeat url(/assets/img/jane.jpg);
+    width: 100%;
+    max-width: 1600px;
+    aspect-ratio: 1600 / 1060 ;
+}
+
+.hero-title{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 24px;
+
+    color: var(--white-color);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
+.hero-title__name{
+    font-size: 3.6rem;
+}
+
+.hero-title__main{
+    font-size: 6.4rem;
+    font-weight: 500;
+}
+
+.hero-title__btn{
+    font-size: 1.8rem;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    border : none;
+    line-height: 2.7rem;
+    opacity: 0.6;
+}
+.hero-title__btn:hover{
+    opacity: 1;
+}
+
+/* ABOUT */
+
+.about{
+    background: var(--about-bgcolor);
+}
+
+/* BLOG ENTRY */
+
+.blog-entry{
+    margin: 16px;
+    padding: 12px 24px;
+    background: var(--white-color);
+}
+
+.blog-entry__title{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.blog-entry__description{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.blog-entry__description-time{
+    opacity: 0.6;
+}
+
+.blog-entry__img img{
+   width: 100%;
+   display: block;
+   padding: 16px 0px;
+}
+.blog-entry__paragraph{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.blog-entry__btn{
+    padding: 24px 0px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-entry__btn-like{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background:var(--white-color);
+    
+}
+.blog-entry__btn-like i{
+    font-size: 1.3rem;
+}
+
+.blog-entry__btn-replies{
+    cursor: pointer;
+    line-height: 2.2rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background:var(--black-color);
+    color: var(--white-color);
+}
+
+.blog-entry__btn-replies span{
+    font-weight: 300;
+    margin-left: 8px;
+    padding: 0px 8px;
+    display: inline-block;
+    color: var(--black-color);
+    background: var(--white-color);
+}
+
+/* FEEDBACK */
+
+.blog-entry__feedback{
+    display: none;
+}
+
+.feedback-wrapper{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.feedback-wrapper:last-child{
+    margin-bottom: 12px;
+}
+
+.feedback__img img{
+    width: 90px;
+}
+
+.feedback__about{
+    margin-left: 42px;
+}
+
+.feedback__nickname{
+    font-size: 2rem;
+}
+
+.feedback__time{
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.feedback__cmt{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#feedback-checkbox:checked ~ .blog-entry__feedback{
+    display: block;
+}
+
+#feedback-checkbox--second:checked ~ .blog-entry__feedback{
+    display: block;
+}
+
+#feedback-checkbox--third:checked ~ .blog-entry__feedback{
+    display: block;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background:var(--footer-bgcolor);
+}
+
+.footer-wrapper{
+    padding: 32px;
+}
+
+.footer-btn{
+    border: none;
+    background: var(--black-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 28px;
+}
+
+.footer-btn i{
+    margin-right: 15px;
+}
+
+.footer-link{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-link a{
+    color: var(--white-color);
+
+}
+
+/* ABOUT / INFOMATION MENU */
+
+.information-wrapper{
+    padding: 16px;
+}
+
+.information-me__img img{
+    width: 100%;
+    filter: grayscale(75%);
+    display: block;
+}
+
+.information-me{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0.01em 16px;
+}
+
+.information-me__heading{
+    font-size: 2rem;
+}
+
+.information-me__paragraph{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
