@@ -17,6 +17,7 @@ html{
     font-size: 62.5%;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
@@ -57,4 +58,8 @@ hr{
     border: 0;
     margin: 20px 0px;
     border-top: 1px solid #eee;
+}
+
+.margin-bt-16{
+    margin-bottom: 16px;
 }

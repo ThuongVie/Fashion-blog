@@ -18,7 +18,7 @@
     <header>
         <!-- TOP BAR -->
         <section class="top-bar hide-on-mobile">
-                <ul class="top-bar__social-list">
+                <ul id="home" class="top-bar__social-list">
                     <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-snapchat"></i></a></li>
@@ -312,20 +312,187 @@
                             </div>
                         </div>
 
+                        <div class="information-wrapper">
+                            <div class="information-heading">
+                                <h3>Popular Posts</h3>
+                            </div>
+                            <div class="information-about">
+                                <div class="information-about__popular">
+                                    <div class="information-about__popular-img">
+                                        <img src="./assets/img/avatar_smoke.jpg" alt="">
+                                    </div>
+                                    <div class="information-about__popular-nick">
+                                        Denim
+                                        <span>Sed mattis nunc</span>
+                                    </div>
+                                </div>
+                                <div class="information-about__popular">
+                                    <div class="information-about__popular-img">
+                                        <img src="./assets/img/bandmember.jpg" alt="">
+                                    </div>
+                                    <div class="information-about__popular-nick">
+                                        Sweaters
+                                        <span>Praes tinci sed</span>
+                                    </div>
+                                </div>
+                                <div class="information-about__popular">
+                                    <div class="information-about__popular-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="information-about__popular-nick">
+                                        Workshop
+                                        <span>Ultricies congue</span>
+                                    </div>
+                                </div>
+                                <div class="information-about__popular">
+                                    <div class="information-about__popular-img">
+                                        <img src="./assets/img/avatar_smoke.jpg" alt="">
+                                    </div>
+                                    <div class="information-about__popular-nick">
+                                        Trends
+                                        <span>Lorem ipsum dipsum</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="information-wrapper">
+                            <div class="information-heading">
+                                <h3>Advertise</h3>
+                            </div>
+                            <div class="information-about">
+                                <div class="information-about__ad">
+                                    <span>
+                                        Your AD Here
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="information-wrapper">
+                            <div class="information-heading">
+                                <h3>Tags</h3>
+                            </div>
+
+                            <div class="information-about">
+                               <div class="information-about__tags">
+                                <span>Fashion</span>
+                                <span>New York</span>
+                                <span>London</span>
+                                <span>Hats</span>
+                                <span>Norway</span>
+                                <span>Sweaters</span>
+                                <span>Ideas </span>
+                                <span>Deals</span>
+                                <span>Accessories</span>
+                                <span>News</span>
+                                <span>Clothing</span>
+                                <span>Shopping</span>
+                                <span>Jeans</span>
+                                <span>Trends</span>
+                               </div>
+                            </div>
+
+                        </div>
+
+                        <div class="information-wrapper">
+                            <div class="information-heading">
+                                <h3>Inspiration</h3>
+                            </div>
+                            <div class="information-about">
+                                <div class="information-about__inspiration">
+                                    <div class="row sm-gutter margin-bt-16">
+                                        <div class="col l-6">
+                                            <div class="information-about__inspiration-img">
+                                                <img src="./assets/img/jeans.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col l-6">
+                                            <div class="information-about__inspiration-img">
+                                                <img src="./assets/img/avatar_hat.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row sm-gutter">
+                                        <div class="col l-6">
+                                            <div class="information-about__inspiration-img">
+                                                <img src="./assets/img/team1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col l-6">
+                                            <div class="information-about__inspiration-img">
+                                                <img src="./assets/img/team4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="information-wrapper">
+                            <div class="information-heading">
+                                <h3>Follow Me</h3>
+                            </div>
+                            <div class="information-about">
+                                <ul class="information-about__social-list">
+                                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fab fa-snapchat"></i></a></li>
+                                    <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="right-0" ><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="information-wrapper">
+                            <div class="information-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="information-about">
+                                <div class="information-about__subscribe">
+                                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                                    <input class="information-about__subscribe-input" type="email" required placeholder="Enter e-mail" name="" id="">
+                                    <label for="subcribe-modal" class="btn information-about__subscribe-button" type="submit">Subcribe</label>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SUBCRIBE MODAL -->
+        <input type="checkbox" hidden name="" id="subcribe-modal">
+
+        <div class="modal">
+            <label for="subcribe-modal" class="modal-layout">
+            </label>
+            <div class="modal-content">
+                <h2>
+                    SUBSCRIBE
+                    <label for="subcribe-modal" class="modal-close">
+                        <i class="btn fas fa-times"></i>
+                    </label>
+                </h2>
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <input class="information-about__subscribe-input" type="email" required placeholder="Enter e-mail" name="" id="">
+                <label for="subcribe-modal" class="btn btn-large information-about__subscribe-button" type="submit">Subcribe</label>
+            </div>
+        </div>
+
         <!-- FOOTER -->
         <footer>
             <div class="footer-wrapper">
-                <button class="footer-btn btn btn-large">
+                <a href="#home" class="footer-btn btn btn-large">
                     <i class="fa fa-arrow-up"></i>
                     <span>
                         To the top
                     </span>
-                </button>
+                </a>
     
                 <div class="footer-link">
                     Powered by 
@@ -336,6 +503,7 @@
             </div>
         </footer>
 
+        
     </main>
 </body>
 </html>

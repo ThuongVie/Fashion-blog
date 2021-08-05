@@ -17,6 +17,10 @@
     .hide-on-tablet{
         display: none;
     }
+
+    .modal-content{
+        width: 500px;
+    }
 }
 
 /* MOBILE */
@@ -31,5 +35,17 @@
 
     .feedback__about{
         margin: 0;
+    }
+
+    .modal-content{
+        margin: 0px 10px;
+        width: auto;
+        left: 0;
+        transform: none;
+    }
+
+    .modal-close{
+        right: -32px;
+        top: -32px;
     }
 }
